@@ -1,0 +1,6 @@
+@import '../../style/helpers/variables';
+@import '../../style/helpers/mixins';
+
+.mock-component {
+  color: purple;
+}

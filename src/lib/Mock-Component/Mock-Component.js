@@ -6,8 +6,9 @@ const cx = cn.bind(style);
 
 /**
  * <MockComponent />: A mock reuseable react component
- * @prop {boolean} isMock Takes a string for no reason
+ * @prop {boolean} isMock - Takes a string for no reason
  * @prop {string} classNames A string of classnames
+ * @props {function} handleClick - Handles the click
  */
 
 class MockComponent extends Component {
@@ -20,14 +21,21 @@ class MockComponent extends Component {
 
   render() {
     return (
-      <div className={cx(style.mockComponent)}></div>
+      <div
+        id="myuitkit-mock-component"
+        className={cx(style.mockComponent)}
+        onClick={this.props.handleClick}
+      >
+        Click this
+      </div>
     );
   }
 }
 
 Mock-Component.propTypes = {
   classNames: PropTypes.string,
-  isMock: PropTypes.bool
+  isMock: PropTypes.bool,
+  handleClick: PropTypes.func
 };
 
 Mock-Component.defaultProps = {
@@ -35,4 +43,4 @@ Mock-Component.defaultProps = {
   isMock: true
 };
 
-export default Mock-Component;
+export default MockComponent;

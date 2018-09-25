@@ -1,4 +1,4 @@
-# @ncw/ui-kit
+# Component Library Starter
 
 This is a react component library starter kit for adding and using reusable react components. Built on React, Rollup, and Storybook.
 
@@ -51,6 +51,7 @@ class MyComponent extends Component {
 
 ## PostCSS + CSS Modules
 ---
+
 - Why use PostCSS?
 	- More javascript-y
 	- NO MOAR NODE-SASS
